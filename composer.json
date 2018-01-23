@@ -1,0 +1,23 @@
+{
+    "name": "yar-trach/typo3starter",
+    "description": "Starter kit for TYPO3 site",
+    "type": "Project",
+    "authors": [
+        {
+            "name": "Yar Trach",
+            "email": "yar.trach@gmail.com"
+        }
+    ],
+    "require": {
+        "kaystrobach/dyncss_scss": "^1.1",
+        "mask/mask": "^3.0",
+        "bk2k/bootstrap-package": "^9.1"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": "web"
+        }
+    }
+}
