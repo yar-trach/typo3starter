@@ -15,7 +15,10 @@ services:
 
     app:
         container_name: typo3-web
-        image: martinhelmich/typo3:8
+        build:
+            context: .
+            dockerfile: Dockerfile
+        # image: yar-trach/typo3container
         ports:
             - "8080:80"
         depends_on:
