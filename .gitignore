@@ -1,2 +1,6 @@
 /vendor/
-web
+web/typo3
+web/typo3temp/*
+web/typo3conf/ext/*
+web/fileadmin/*
+web/uploads/*
