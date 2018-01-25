@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d9bfbf5e2971fc1bbc8573d4211ffa5",
+    "content-hash": "e92c34ba379b7492235e06ed7a8d6542",
     "packages": [
         {
             "name": "bk2k/bootstrap-package",
@@ -1873,8 +1873,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": {
+        "ext-xsl": "*"
+    }
 }

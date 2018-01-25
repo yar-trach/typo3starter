@@ -18,9 +18,12 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        # image: yar-trach/typo3container
         ports:
             - "8080:80"
+        environment:
+            - USERID=1000
+            - GROUPID=1000
+        command: "sh docker_conf/run.sh"
         volumes:
             - .:/var/www/html
         depends_on:
