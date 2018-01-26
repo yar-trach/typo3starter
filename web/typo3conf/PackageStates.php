@@ -119,6 +119,9 @@ return [
         'bootstrap_package' => [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
         ],
+        'mask' => [
+            'packagePath' => 'typo3conf/ext/mask/',
+        ],
     ],
     'version' => 5,
 ];
