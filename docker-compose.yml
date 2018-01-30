@@ -13,10 +13,8 @@ services:
             - MYSQL_PASSWORD=password
         ports:
             - "3306:3306"
-        volumes:
-            - ./docker_conf:/docker_conf
         networks:
-            - phpmyadmin
+            - general_network
 
     web:
         container_name: typo3-web
@@ -34,7 +32,7 @@ services:
         depends_on:
             - database
         networks:
-            - phpmyadmin
+            - general_network
 
     solr:
         container_name: typo3-solr
@@ -56,8 +54,8 @@ services:
             - PMA_HOST=database
             - PMA_ARBITRARY=1
         networks:
-            - phpmyadmin
+            - general_network
 
 networks:
-    phpmyadmin:
+    general_network:
         driver: bridge
