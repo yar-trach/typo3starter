@@ -101,6 +101,9 @@ return [
         'reports' => [
             'packagePath' => 'typo3/sysext/reports/',
         ],
+        'scheduler' => [
+            'packagePath' => 'typo3/sysext/scheduler/',
+        ],
         'sv' => [
             'packagePath' => 'typo3/sysext/sv/',
         ],
@@ -121,6 +124,9 @@ return [
         ],
         'mask' => [
             'packagePath' => 'typo3conf/ext/mask/',
+        ],
+        'solr' => [
+            'packagePath' => 'typo3conf/ext/solr/',
         ],
     ],
     'version' => 5,

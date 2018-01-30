@@ -19,7 +19,7 @@ if [ "$WWW_DATA_GROUPID" -ne "${GROUPID}" ];then
 fi
 
 # set solrdata group to 8983 to make folder writable for solr container
-# chown :8983 /var/www/html/solrdata/ -R
+chown 8983:8983 /var/www/html/solrdata/ -R
 
 # Moving TYPO3 temp out of shared folders to improve speed
 mkdir /typo3temp

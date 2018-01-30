@@ -35,6 +35,14 @@ services:
             - database
         networks:
             - phpmyadmin
+
+    solr:
+        container_name: typo3-solr
+        image: typo3solr/ext-solr:6.0.0
+        ports:
+            - "8983:8983"
+        volumes:
+            - ./solrdata:/opt/solr/server/solr/data/
     
     phpmyadmin:
         container_name: typo3-phpmyadmin

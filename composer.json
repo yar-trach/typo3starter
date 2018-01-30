@@ -22,6 +22,7 @@
     },
     "require": {
         "typo3/cms": "8.7.9",
+        "apache-solr-for-typo3/solr": "~7.5",
         "kaystrobach/dyncss_scss": "^1.1",
         "mask/mask": "^3.0",
         "bk2k/bootstrap-package": "^9.1"

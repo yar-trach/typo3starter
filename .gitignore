@@ -1,8 +1,32 @@
-/vendor/
+##### Vendor modules #####
+vendor
+##### END OF Vendor modules #####
+
+
+
+
+
+##### Web items #####
 web/typo3
 web/typo3temp/*
 web/typo3conf/ext/*
 web/typo3conf/deprecation_*
 web/fileadmin/*
-!web/fileadmin/templates
+
+# Don't ignore Mask templates
+!web/fileadmin/templates/content
+!web/fileadmin/templates/preview
+
 web/uploads/*
+##### END OF Web items #####
+
+
+
+
+
+##### Solr #####
+solrdata/*
+
+# Keep solrdata folder
+!solrdata/.gitkeep
+##### END OF Solr #####
